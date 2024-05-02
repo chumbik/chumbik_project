@@ -9,26 +9,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-<div id="app" class="container mx-auto bg-slate-600 w-full h-full">  
-    <header class="flex justify-between items-center pl-2 bg-slate-800 text-slate-50">    
-        <h2 class="text-3xl">Daniil Chumbik</h2>
-        <nav class="flex text-xl *:py-4 *:px-4 hover:*:bg-slate-400">   
-            <a href="blog"></a>
-            <a href="#">HomeWork</a>
-            <ul class="">
-                <li>part 1</li>
-                <li>part 2</li>
-                <li>part 3</li>
-                <li>part 4</li>
-            </ul>
-            <a href="#">portfolio</a>
-            <a href="#">about me</a>
-            <a href="#">contacts</a>
-        </nav>
-    </header>
 
-</div>
+<body>
+    <div id="app" class="container mx-auto h-screen grid grig-cols-12 auto-rows-max">
+        <header class=" col-span-12 h-max flex justify-between items-center pl-2 bg-slate-800 text-slate-50">
+            <h2 class="text-3xl"><b>Daniil Chumbik</b></h2>
+            <nav>
+                <ul class="flex text-xl *:py-4 *:px-4 hover:*:bg-slate-400"></ul>
+                <li> <a href="#">blog</a></li>
+                <li class="relative group"></li>
+                <li> <a href="#">HomeWork</a> </li>
+                <ul class="hidden group-hover:block abcolute top-14 left-0 w-full bg-slate-600 hover:*bg-slate-400">
+                    <li><a href="#">part 1</a></li>
+                    <li><a href="#">part 2</a></li>
+                    <li><a href="#">part 3</a></li>
+                    <li><a href="#">part 4</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">portfolio</a> </li>
+                <li> <a href="#">about me</a> </li>
+                <li> <a href="#">contacts</a> </li>
+
+            </nav>
+        </header>
+        <main class="bg-teal-900 col-span-8">
+            <aside class="bg-teal-500 col-span-4 "></aside>
+        </main>
+        <main class="bg-teal-900 col-span-4">
+        </main>
+        <footer class="col-span-12 h-20 pl-2 py-4 bg-slate-600 text-slate-50">
+            <h2 class="text-slate-50"><b>academy TOP © 2024</b></h2>
+        </footer>
+
+    </div>
 </body>
 
 </html>
